@@ -1,7 +1,10 @@
 {
-  "name": "clean-test",
+  "name": "automatizacion",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,16 +14,33 @@
   "dependencies": {
     "next": "16.4.5",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "firebase": "13.2.0",
+    "firebase-admin": "14.5.0",
+    "tesseract.js": "7.0.0",
+    "@tesseract.js-data/spa": "1.0.0",
+    "sharp": "0.35.5",
+    "zod": "4.6.7",
+    "exceljs": "4.4.0",
+    "@supabase/supabase-js": "2.45.0"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/node": "24.0.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "5.1.0",
+    "playwright": "1.65.0",
+    "@faker-js/faker": "10.6.0",
+    "tsx": "4.19.0"
+  },
+  "overrides": {
+    "firebase-admin": {
+      "jwks-rsa": "3.2.2"
+    }
   }
 }
